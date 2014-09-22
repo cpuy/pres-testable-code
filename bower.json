@@ -1,0 +1,20 @@
+{
+  "name": "pres-testable-code",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cpuy/pres-testable-code",
+  "authors": [
+    "Colin PUY <colin.puy@bonitasoft.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ruban": "~0.3.1"
+  }
+}

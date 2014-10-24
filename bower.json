@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "ruban": "~0.3.1"
+    "ruban": "~0.3.1",
+    "google-code-prettify": "~1.0.3"
   }
 }

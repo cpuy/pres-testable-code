@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bower_components/highlightjs/styles/tomorrow.css"/>
     <link rel="stylesheet" href="bower_components/ruban/css/ruban.min.css"/>
+    <link rel="stylesheet" href="style/my-prettify.css"/>
     <link rel="stylesheet" href="bower_components/ruban/css/ruban-print.min.css" media="print"/>
+
+    <script src="bower_components/google-code-prettify/bin/run_prettify.min.js"></script>
 
     <title>Testable code</title>
 </head>
@@ -25,6 +28,13 @@
     <ul>
         <li>Static initialization</li>
         <li>Rely on collaborators that need to be initialized</li>
+        <pre class="prettyprint">
+            @BeforeClass
+            public static void initEnvironement() {
+                new BonitaRestAPIServlet();
+                I18n.getInstance();
+            }
+        </pre>
         <li>Too much collaborators</li>
     </ul>
     <span>Pass collaborators in constructors</span>

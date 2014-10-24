@@ -227,7 +227,27 @@ public class Log {
 </section>
 
 <section class="no-toc">
-    <h1>Avoid service lookups</h1>
+    <h1 style="margin-bottom: 0">Avoid service lookups</h1>
+    <small>Friends don’t let friends do static service lookups.</small>
+    <ul>
+        <li><i>Seemingly</i> clean, hide dependency that could’ve been explicit as a constructor parameter within the class</li>
+        <li>Leads to <i>over-mocking</i></li>
+    </ul>
+    <ul>
+        <li><i class="fa fa-thumbs-o-up"></i> Inject collaborator in constructor</li>
+    </ul>
+</section>
+
+<section class="no-toc">
+    <h1 style="margin-bottom: 0">Avoid service lookups</h1>
+    <small>Worried that your constructor is taking too much parameters?</small>
+    <ul>
+        <li>It sounds like your code might be missing an abstraction or two</li>
+    </ul>
+    <ul>
+        <li><i class="fa fa-thumbs-o-up"></i> Introduce a parameter object</li>
+        <li><i class="fa fa-thumbs-o-up"></i> Split your code into more specialized objects</li>
+    </ul>
 </section>
 
 <script src="../bower_components/jquery/jquery.min.js"></script>

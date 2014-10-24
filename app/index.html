@@ -206,7 +206,13 @@ public class Log {
 </section>
 
 <section class="no-toc">
-    <h1>Wrap external libraries</h1>
+    <h1 style="margin-bottom: 0">Wrap external libraries</h1>
+    <small>Not everybody is as good at coming up with testable designs as you are</small>
+    <ul>
+        <li>Wrap the library behind a thin layer that’s test-friendly.</li>
+        <li>Makes it easy to substitute the actual implementation.</li>
+        <li>Idem when you have to extends library (i.e. servlet ...)</li>
+    </ul>
 </section>
 
 <section class="no-toc">

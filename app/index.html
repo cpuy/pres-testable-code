@@ -15,18 +15,30 @@
 </head>
 <body>
 
-<section>
-    <h1>I want to write testale code</h1>
+<section class="no-toc">
+    <h1><i class="fa fa-code"></i><br/>I want to write testale code <br/><i class="fa fa-code"></i></h1>
+</section>
+
+<section class="toc">
+    <h1>Summary</h1>
 </section>
 
 <section>
     <h1>Testability issues</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Can’t instantiate a class</h1>
-    <ul>
+    <ul style="margin-top: -50px">
         <li>Static initialization</li>
+        <pre class="prettyprint">
+            static {
+                ...
+            }
+            public Constructor() {
+            ...
+            }
+        </pre>
         <li>Rely on collaborators that need to be initialized</li>
         <pre class="prettyprint">
             @BeforeClass
@@ -34,13 +46,17 @@
                 new BonitaRestAPIServlet();
                 I18n.getInstance();
             }
+            @Test
+            public void testUsingAnAPI() {
+                APIComment apiComment = new APIComment();
+                ...
+            }
         </pre>
         <li>Too much collaborators</li>
     </ul>
-    <span>Pass collaborators in constructors</span>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Can’t invoke a method</h1>
     <ul>
         <li>private methods</li>
@@ -48,7 +64,7 @@
     </ul>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Can’t observe the outcome</h1>
     <ul>
         <li>Hard-wired collaborators</li>
@@ -56,7 +72,7 @@
     </ul>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Can’t substitute a collaborator</h1>
     <ul>
         <li>Hardcoded new Collaborator()</li>
@@ -64,7 +80,7 @@
     </ul>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Can’t override a method</h1>
     <ul>
         <li>private static final Collaborator getCollaborator() { ... }</li>
@@ -75,40 +91,40 @@
     <h1>Testable design</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Avoid complex private methods</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Avoid final methods</h1>
     <span>perf final ????</span>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Avoid static methods</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Use new with care</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Avoid logic in constructors</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Avoid the Singleton</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Favor composition over inheritance</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Wrap external libraries</h1>
 </section>
 
-<section>
+<section class="no-toc">
     <h1>Avoid service lookups</h1>
 </section>
 

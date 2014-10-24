@@ -12,6 +12,14 @@
     <script src="../bower_components/google-code-prettify/bin/run_prettify.min.js"></script>
 
     <title>Testable code</title>
+
+    <style>
+        .thereismore {
+            font-family: "Source Code Pro",sans-serif;
+            font-size: 50%;
+            background-color: lightyellow;
+        }
+    </style>
 </head>
 <body>
 
@@ -122,7 +130,15 @@
 
 <section class="no-toc">
     <h1>Avoid final methods</h1>
-    <span>perf final ????</span>
+    <ul>
+        <li>Can't be overridden by test double</li>
+    </ul>
+    <div class="thereismore">
+        <strong>What about the performance of final?</strong><br/>
+        “I wouldn’t go out of my way to declare a method or class final purely for performance
+        reasons. Only after you’ve definitely identified a performance problem is this even
+        worth considering.”
+    </div>
 </section>
 
 <section class="no-toc">

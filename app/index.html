@@ -142,7 +142,18 @@
 </section>
 
 <section class="no-toc">
-    <h1>Avoid static methods</h1>
+    <h1 style="margin-bottom: 0">Avoid static methods</h1>
+    <ul>
+        <li>Most static methods shouldn’t be.
+            <ul>
+                <li style="font-size: 70%">We couldn’t bother figuring out where it belongs -> Utility class</li>
+            </ul>
+        </li>
+        <li>Hard to stub in a test.</li>
+    </ul>
+    <ul>
+        <li><strong>Rule of thumb</strong>: do not make a method static if you foresee that you might want to stub it out in a unit test one day.</li>
+    </ul>
 </section>
 
 <section class="no-toc">

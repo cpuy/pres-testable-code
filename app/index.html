@@ -168,7 +168,15 @@
 </section>
 
 <section class="no-toc">
-    <h1>Avoid logic in constructors</h1>
+    <h1><small>Avoid logic in constructors</small></h1>
+    <ul>
+        <li>Constructors are hard to bypass</li>
+        <li>Triggered by subclass</li>
+    </ul>
+    <ul>
+        <li><strong>Rule of thumb</strong>: whatever code you find in your constructors, make sure
+            that it’s not something you’ll want to substitute in a unit test</li>
+    </ul>
 </section>
 
 <section class="no-toc">

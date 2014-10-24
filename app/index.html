@@ -181,6 +181,18 @@
 
 <section class="no-toc">
     <h1>Avoid the Singleton</h1>
+    <pre class="prettyprint">
+public class Log {
+    public void log(String message) {
+            String prefix = "[" + Clock.getInstance().timestamp() + "] ";
+            logFile.write(prefix + message);
+    }
+}
+    </pre>
+    <ul class="steps">
+        <li>Prefer the <i>only one instance</i> approach</li>
+        <li>Use Dependency Injection !!!</li>
+    </ul>
 </section>
 
 <section class="no-toc">

@@ -124,7 +124,8 @@
         <li>Tested only through those public methods.</li>
     </ul>
     <ul>
-        <li>Want to test it ? Move them to another object responsible for that logic</li>
+        <li>Want to test it ?</li>
+        <li><i class="fa fa-thumbs-o-up"></i> Move them to another object responsible for that logic</li>
     </ul>
 </section>
 
@@ -152,7 +153,7 @@
         <li>Hard to stub in a test.</li>
     </ul>
     <ul>
-        <li><strong>Rule of thumb</strong>: do not make a method static if you foresee that you might want to stub it out in a unit test one day.</li>
+        <li><i class="fa fa-thumbs-o-up"></i><strong> Rule of thumb</strong>: do not make a method static if you foresee that you might want to stub it out in a unit test one day.</li>
     </ul>
 </section>
 
@@ -163,7 +164,7 @@
         <li>True collaborator should be passed into the constructor/method</li>
     </ul>
     <ul>
-        <li><strong>Rule of thumb</strong>: do not “new up” an object if you foresee that you might want to stub it out in a unit test one day.</li>
+        <li><i class="fa fa-thumbs-o-up"></i><strong> Rule of thumb</strong>: do not “new up” an object if you foresee that you might want to stub it out in a unit test one day.</li>
     </ul>
 </section>
 
@@ -174,7 +175,7 @@
         <li>Triggered by subclass</li>
     </ul>
     <ul>
-        <li><strong>Rule of thumb</strong>: whatever code you find in your constructors, make sure
+        <li><i class="fa fa-thumbs-o-up"></i><strong> Rule of thumb</strong>: whatever code you find in your constructors, make sure
             that it’s not something you’ll want to substitute in a unit test</li>
     </ul>
 </section>
@@ -190,8 +191,8 @@ public class Log {
 }
     </pre>
     <ul class="steps">
-        <li>Prefer the <i>only one instance</i> approach</li>
-        <li>Use Dependency Injection !!!</li>
+        <li><i class="fa fa-thumbs-o-up"></i> Prefer the <i>only one instance</i> approach</li>
+        <li><i class="fa fa-thumbs-o-up"></i> Use Dependency Injection !!!</li>
     </ul>
 </section>
 
@@ -222,7 +223,7 @@ public class Log {
         <li>Your design isn’t testable and <i>you can’t change the design</i> to be more testable</li>
     </ul>
     <ul>
-        <li>Wrap the untestable piece of code into a thin layer that <i>is</i> testable</li>
+        <li><i class="fa fa-thumbs-o-up"></i> Wrap the untestable piece of code into a thin layer that <i>is</i> testable</li>
     </ul>
 </section>
 
@@ -230,7 +231,8 @@ public class Log {
     <h1 style="margin-bottom: 0">Avoid service lookups</h1>
     <small>Friends don’t let friends do static service lookups.</small>
     <ul>
-        <li><i>Seemingly</i> clean, hide dependency that could’ve been explicit as a constructor parameter within the class</li>
+        <li><i>Seemingly</i> clean</li>
+        <li>Hide dependency that could’ve been explicit as a constructor parameter within the class</li>
         <li>Leads to <i>over-mocking</i></li>
     </ul>
     <ul>

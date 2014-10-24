@@ -110,7 +110,14 @@
 </section>
 
 <section class="no-toc">
-    <h1>Avoid complex private methods</h1>
+    <h1 style="margin-bottom: 0px;"><small style="font-size: 75%">Avoid complex private methods</small></h1>
+    <ul>
+        <li>Trivial utilities and shorthands to make your public methods read well.</li>
+        <li>Tested only through those public methods.</li>
+    </ul>
+    <ul>
+        <li>Want to test it ? Move them to another object responsible for that logic</li>
+    </ul>
 </section>
 
 <section class="no-toc">

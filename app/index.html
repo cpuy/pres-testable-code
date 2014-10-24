@@ -87,7 +87,21 @@
 <section class="no-toc">
     <h1>Can’t override a method</h1>
     <ul>
-        <li>private static final Collaborator getCollaborator() { ... }</li>
+        <li>With<pre class="prettyprint">private static final Collaborator getCollaborator() { ... }</pre></li>
+        <li>You're unable to do that
+            <pre class="prettyprint">
+    @Test
+    public void test() {
+        final Collaborator collaborator = new TestDouble();
+        ObjectUnderTest o = new ObjectUnderTest() {
+            @Override
+            private static final getCollaborator() {
+                return collaborator;
+            }
+        };
+        ...
+    }
+        </pre></li>
     </ul>
 </section>
 

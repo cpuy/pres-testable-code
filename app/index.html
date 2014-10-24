@@ -19,6 +19,25 @@
             font-size: 50%;
             background-color: lightyellow;
         }
+        blockquote {
+            font-size: 60%;
+            background: #f9f9f9;
+            border-left: 10px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: "\201C""\201D";
+        }
+        blockquote:before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+        blockquote p {
+            display: inline;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +48,23 @@
 
 <section class="toc">
     <h1>Summary</h1>
+</section>
+
+<section>
+    <h1>Foreword</h1>
+</section>
+
+<section class="no-toc" style="text-align: center;">
+    <figure>
+        <img height="700px" src="img/book.png" />
+        <figcaption>Ch. 7: Testable design</figcaption>
+    </figure>
+</section>
+
+<section>
+    <h1>What’s testable design ?</h1>
+    <blockquote>Testability is not a term that describes whether software can be tested. It refers to software that is <i>easily</i> tested.</blockquote>
+    <blockquote>A given piece of code should be easy and quick to write a unit test against.</blockquote>
 </section>
 
 <section>
